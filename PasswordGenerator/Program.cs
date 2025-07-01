@@ -1,5 +1,5 @@
 ﻿using System;
-using 
+
 
 namespace PasswordGenerator
 {
@@ -8,9 +8,10 @@ namespace PasswordGenerator
         static void Main(string[] args)
         {
             Random rnd = new Random();
-            int vyber = rnd.Next(1, 3);
+            int vyber = 0;
             for (int i = 0; i < 8; i++)
             {
+                vyber = rnd.Next(1, 4);
                 if (vyber == 1)
                 {
                     SpecZnak();
@@ -33,7 +34,7 @@ namespace PasswordGenerator
 
         private static void Cislo()
         {
-            throw new NotImplementedException();
+            
         }
 
         private static void SpecZnak()
